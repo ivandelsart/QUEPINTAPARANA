@@ -48,7 +48,6 @@ background-color: rgb(255, 255, 255);
 
 
 
-
 .main-menu{
   list-style: none;
   display: flex;
@@ -58,7 +57,6 @@ background-color: rgb(255, 255, 255);
   transform: translateY(-5000%);
   transition: transform 0.1s;
   height: 50px;
-
 }
 
 .main-menu-show{
@@ -109,6 +107,13 @@ background-color: rgb(255, 255, 255);
   margin-top: -5px;
 
 }
+.time-full{
+  display: block;
+}
+.time-movil{
+  display:none;
+}
+
 
 
 /* --------------MENU RESPONSIVE---------------- */
@@ -126,6 +131,10 @@ background-color: rgb(255, 255, 255);
   width: 100%;
   text-align: center;
   padding: 30px;
+  padding-bottom: 0;
+}
+.eventoPrincipal p {
+  font-size: 26px;
 }
 
 
@@ -219,23 +228,15 @@ border-radius: 10px;
   transition: 0.5s;
 }
 
-.elements-imagen-container{
 
-
-}
-.elements-imagen-container img{
+.elements-imagen-container img {
   width: 200px;
-
   border-radius: 10px;
 }
 
 
 .elements-description{
-
   padding: 15px;
-  
-
- 
 }
 
 @media screen and (max-width: 880px) {
@@ -248,13 +249,16 @@ border-radius: 10px;
     transition: 0.5s;
   }
   
-  .elements-imagen-container{
 
-
-  }
   .elements-imagen-container img{
     width: 100%;
     border-radius: 10px;
+  }
+  .time-full{
+    display:none;
+  }
+  .time-movil{
+    display:block;
   }
 
   }
